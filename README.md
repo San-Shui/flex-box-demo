@@ -27,6 +27,28 @@ flex 是一种新型的布局方式，使用该布局方式可以实现几乎所
 &emsp;&emsp;采用 Flex 布局的元素，称为 Flex 容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称"项目"。
 
 ![](./img/bg2015071004.png)
+
 &emsp;&emsp;容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；交叉轴的开始位置叫做cross start，结束位置叫做cross end。
 项目默认沿主轴排列。单个项目占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size。
 
+### 三、父容器属性
+
+父容器上有六个属性
+
+ - flex-direction：主轴的方向。
+ - flex-wrap：超出父容器子容器的排列样式。
+ - flex-flow：flex-direction 属性和 flex-wrap 属性的简写形式。
+ - justify-content：子容器在主轴的排列方向。
+ - align-items：子容器在交叉轴的排列方向。
+ - align-content：多根轴线的对齐方式。
+
+### 四、子容器属性
+
+子容器也有 6 个属性：
+
+- order：子容器的排列顺序
+- flex-grow：子容器剩余空间的拉伸比例
+- flex-shrink：子容器超出空间的压缩比例
+- flex-basis：子容器在不伸缩情况下的原始尺寸
+- flex：子元素的 flex 属性是 flex-grow,flex-shrink 和 flex-basis 的简写
+- align-self：align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。
